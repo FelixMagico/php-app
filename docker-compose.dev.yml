@@ -1,0 +1,8 @@
+services:
+  app:
+    image: php-app:dev
+    build:
+      context: .
+      target: dev
+    volumes:
+      - ./src:/var/www/html
